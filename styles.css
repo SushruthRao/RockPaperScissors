@@ -1,0 +1,211 @@
+:root {
+  --c1: #f8fce1;
+  --c2: #dfc751;
+}
+
+@font-face {
+  font-family: Yo;
+  src: url("Silkscreen-Regular.ttf");
+}
+
+* {
+  font-family: Yo;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>👉</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
+}
+
+@keyframes anim-defeat {
+
+  from,
+  to {
+    background-color: #e8ff52;
+  }
+
+  50% {
+    background-color: #c21717;
+  }
+}
+
+@keyframes anim-win {
+
+  from,
+  to {
+    background-color: #e8ff52;
+  }
+
+  50% {
+    background-color: #78cd18;
+  }
+}
+
+@keyframes anim-draw {
+
+  from,
+  to {
+    background-color: #e8ff52;
+  }
+
+  50% {
+    background-color: #aabf1e;
+  }
+}
+
+@keyframes bground-anim {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 400%;
+  }
+}
+
+body {
+  margin: 0;
+  animation: bground-anim 10s linear infinite;
+  background: linear-gradient(to right, var(--c1), var(--c2), var(--c1));
+  overflow: hidden;
+  background-size: 400%;
+
+
+}
+
+html {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>👉</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
+}
+
+#input-btn,
+.rock,
+.paper,
+.sic {
+  background-color: #e8ff52;
+  /* Green */
+  border: 5px solid black;
+  color: black;
+  padding: 60px 60px 60px 60px;
+
+  text-align: justify;
+  text-decoration: black;
+  display: inline-block;
+  font-size: 23px;
+  padding-block: 1.5rem;
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 150px;
+
+
+}
+
+#input-btn:hover {
+  background-color: #aabf1e;
+  transition-property: background-color;
+  transition-delay: 0.2s;
+  transition-duration: 0.6s;
+
+}
+
+
+.rock {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>✊</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
+}
+
+.paper {
+
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>🖐️</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
+}
+
+.sic {
+
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 100 100' style='fill:black;font-size:60px;'><text y='50%'>✌️</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
+}
+
+#marginizer {
+  margin-left: 100px;
+
+}
+
+#battle-arena {
+  margin: 0 auto 0;
+
+
+}
+
+#result {
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  background-color: #e8ff52;
+  border: 5px solid black;
+
+  font-size: 2em;
+}
+
+#container {
+  display: inline-block;
+  align-items: center;
+  padding-left: 8%;
+
+}
+
+#end-box {
+  padding: 10px 10px 10px 20px;
+  border: 5px solid black;
+  background-color: #e8ff52;
+  text-align: center;
+  font-size: 1.2em;
+
+}
+
+.vs {
+  margin-left: 70px;
+  text-align: center;
+  display: inline-block;
+  padding-left: 1.6em;
+
+}
+
+.yo {
+  max-height: 13em;
+  text-align: center;
+  max-width: 100px;
+  display: inline-block;
+
+  padding-left: 1.1em;
+
+}
+
+#end-box1 {
+  padding: 20px 20px 20px 20px;
+  border: 5px solid black;
+  background-color: #e8ff52;
+  
+  text-align: center;
+  grid-area: "player robot";
+
+}
+
+@keyframes yoanim {
+
+  from,
+  to {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+}
+
+
+.yo:hover {
+  animation-name: yoanim;
+  animation-duration: 1s;
+
+
+}
