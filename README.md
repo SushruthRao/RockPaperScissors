@@ -4,7 +4,4 @@
     <img src="/images.jpg">
 </p>
 
-# ✊🖐️✌️
-Rock, Paper n Scissors !
 
-![img](/images.jpg)
